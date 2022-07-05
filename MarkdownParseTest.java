@@ -63,5 +63,10 @@ public class MarkdownParseTest {
         List<String> expect = List.of("https://something.com", "some-page.html");
         assertEquals(MarkdownParse.getLinks(contents), expect);
     }
-    
+    @Test
+    public void testdiffbracket() throws IOException {
+        String contents = Files.readString(Path.of("test-file9.md"));
+        List<String> expect = List.of("http://something.com");
+        assertEquals(MarkdownParse.getLinks(contents), expect);
+    }
 }

@@ -1,1 +1,1 @@
-![link]{something.com}
+![link]{http://something.com}
